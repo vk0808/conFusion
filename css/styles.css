@@ -1,3 +1,8 @@
+/* General */
+a:hover {
+	text-decoration: none;
+}
+
 /* Navbar */
 .navbar {
 	background-color: #f7f7f7;
@@ -39,10 +44,17 @@ body{
     border-bottom-left-radius: 0;
 }
 
+.jumbo_text {
+	letter-spacing: 1px;
+	font-size: 20px;
+}
+
 .visit_link {
 	text-decoration: none;
 	border-bottom: 2px solid orange;
 	text-transform: uppercase;
+	font-weight: 500;
+	padding: 0 20px;
 }
 
 .visit_link:hover {
@@ -50,15 +62,22 @@ body{
 	border-bottom: 2px dashed orange;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
 	.jumbotron {
 		background-size: cover;
+		height: 600px;
 	}
 }
 
 @media (max-width: 530px) {
 	.jumbotron {
-		height: 600px;
+		height: 650px;
+	}
+}
+
+@media (max-width: 368px) {
+	.jumbotron {
+		height: 780px;
 	}
 }
 
@@ -70,6 +89,7 @@ body{
 
 .blockquote-footer {
 	font-size: 18px;
+	letter-spacing: 1px;
 	color: floralwhite;
 }  
 
@@ -148,4 +168,147 @@ body{
 	top: 0;
 	left: 0;
 	min-height: 300px;
+}
+
+
+/* Culnary Section */
+/* Left-image, right-content */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+section {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fcf8f4;
+}
+
+.culnary {
+	padding: 50px 0;
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-self: center;
+}
+
+.left-image-1 {
+	width: 60%;
+	height: 500px;
+	background: url('../img/pizza-pixabay.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.block1-left {
+	border: 20px solid #d1d1d1;
+	background-color: #f9f9f9;
+	padding: 20px;
+}
+
+.right-content {
+	width: 50%;
+	min-height: 400px;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	margin-left: -100px;
+}
+
+.cont_head {
+	font-size: 30px;
+	font-size: 30px;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+.cont_text {
+	padding: 20px 0;
+	font-size: 18px;
+    line-height: 25px;
+    margin: 20px 0;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.read-btn {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background-color: #00BDD0;
+	border-radius: 25px;
+	padding: 5px 10px;
+	color: #f8f8f8;
+}
+
+@media only screen and (max-width: 768px) {
+	.culnary {
+		flex-direction: column;
+	}
+
+	.left-image-1 {
+		width: 100%;
+		height: 400px;
+	}
+
+	.right-content {
+		width: 90%;
+		margin: 0;
+		margin-top: -100px;
+	}
+}
+
+/* Right-image, left-content */
+.right-image {
+	width: 60%;
+	height: 500px;
+	background: url('../img/buffet-naim-benjelloun.jpg') no-repeat center;
+	background-size: cover;
+	z-index: 0;
+}
+
+.left-content {
+	width: 50%;
+	min-height: 400px;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	margin-right: -100px;
+	z-index: 1;
+}
+
+@media only screen and (max-width: 768px) {
+	.culnary {
+		flex-direction: column;
+	}
+
+	.right-image {
+		width: 100%;
+		height: 400px;
+		order: 1;
+	}
+
+	.left-content {
+		width: 90%;
+		margin: 0;
+		margin-top: -100px;
+		order: 2;
+	}
+}
+
+.left-image-2 {
+	width: 60%;
+	height: 500px;
+	background: url('../img/chef-tirachard-kumtanom.jpg') no-repeat center;
+	background-size: cover;
+}
+
+@media only screen and (max-width: 768px) {
+	.left-image-2 {
+		width: 100%;
+		height: 400px;
+	}
 }
