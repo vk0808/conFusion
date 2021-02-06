@@ -1,3 +1,115 @@
+/* Navbar */
+.navbar {
+	background-color: #f7f7f7;
+}
+
+#login_list {
+	max-width: 120px;
+	background-color: #00BDD0;
+	padding: 0 10px;
+	border-radius: 20px;
+}
+
+.navbar-brand {
+	padding-left: 10px;
+}
+
+.navbar-nav li {
+	text-transform: uppercase;
+	font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+/* Body */
+body{
+	padding-top: 60px;
+	z-index: 0;
+}
+
+/* Jumbotron */
+.jumbotron{
+	padding: 70px 30px;
+	height: 500px;
+	margin: 0px auto;
+	background-image: url('../img/dishes-pixabay.jpg');
+	background-size: contain;
+	color: #f8f8f8;
+	border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.visit_link {
+	text-decoration: none;
+	border-bottom: 2px solid orange;
+	text-transform: uppercase;
+}
+
+.visit_link:hover {
+	text-decoration: none;
+	border-bottom: 2px dashed orange;
+}
+
+@media (max-width: 750px) {
+	.jumbotron {
+		background-size: cover;
+	}
+}
+
+@media (max-width: 530px) {
+	.jumbotron {
+		height: 600px;
+	}
+}
+
+.blockquote p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 32px;
+	font-weight: 600;
+}
+
+.blockquote-footer {
+	font-size: 18px;
+	color: floralwhite;
+}  
+
+/* Footer */
+.footer{
+	background-color: #d1c4e9;
+	margin: 0px auto;
+	padding: 20px 0px; 
+}
+
+.contact_main ul {
+	padding-left: 0;
+}
+
+.contact_main li {
+	list-style: none;
+}
+
+/* Copyright */
+.social-accounts {
+    padding-left: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+.social-accounts>li {
+	display: inline-block;
+    width: 26px;
+    margin: 5px;
+}
+
+.social-accounts>li .fa {
+    color: #f8f8f8;
+}
+
+.social-accounts>li .fa:hover {
+	color: #fd7e14;
+}
+
+/*  */
 .row-header{
 	margin: 0px auto;
 	padding: 0px auto;
@@ -10,32 +122,10 @@
 	min-height: 400px;
 }
 
-.footer{
-	background-color: #d1c4e9;
-	margin: 0px auto;
-	padding: 20px 0px; 
-}
-
-.jumbotron{
-	padding: 70px 30px;
-	margin: 0px auto;
-	background-color: #9575cd; 
-	color: floralwhite;
-}
-
 .address{
 	font-size: 80%;
 	margin: 0px;
 	color: #0f0f0f;
-}
-
-body{
-	padding-top: 50px;
-	z-index: 0;
-}
-
-.navbar-dark{
-	background-color: #512da8;
 }
 
 .tab-content{
