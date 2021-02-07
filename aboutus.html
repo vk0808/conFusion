@@ -13,6 +13,7 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/about.css">
 </head>
 <body>
     <nav class="navbar navbar-light navbar-expand-sm fixed-top">
@@ -24,7 +25,7 @@
                     <li class="nav-items"><a class="nav-link" href="./index.html">Home</a></li>
                     <li class="nav-items active"><a class="nav-link" href="#">About</a></li>
                     <li class="nav-items"><a class="nav-link" href="./menu.html">Menu</a></li>
-                    <li class="nav-items"><a class="nav-link" href="./contactus.html">Contact</a></li>
+                    <li class="nav-items"><a class="nav-link" data-toggle="modal" data-target="#reserve">Reservation</a></li>
                     <li class="nav-items" id="login_list"><a class="nav-link" data-toggle="modal" data-target="#Loginmodal">Login</a></li>
                 </ul>
             </div>
@@ -119,55 +120,85 @@
             </div>
         </div>
     </div>
+    <!-- Reservation Modal -->
+    <div class="modal fade" id="reserve" role="dialog">
+        <div class="modal-dialog modal-reserve modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Reserve Table</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>                    
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Number of Guests</label>
+                            <div class="col-sm-4">
+                                <select class="custom-select" style="width:150px;">
+                                    <option>1</option> 
+                                    <option>2</option> 
+                                    <option>3</option> 
+                                    <option>4</option> 
+                                    <option>5</option> 
+                                    <option>6</option> 
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label">Section</label>
+                            <div class="col-md-9 btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-success badge-pill active">
+                                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Non Smoking
+                                </label>
+                                <label class="btn btn-danger badge-pill">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label" for="date">Date Time</label>
+                            <div class="col-sm-9">
+                                <input class="form-control" id="date" type="date" name="date" placeholder="Date">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label" for="time">Time</label>
+                            <div class="col-sm-9">
+                                <input class="form-control" type="time" name="" id="time" placeholder="Time">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="offset-2 btn btn-secondary btn-sm" data-dismiss="modal">Cancel</button>
+                            <button class="btn btn-primary btn-sm ml-1" type="submit">Reserve</button>     
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                </div>     
+            </div>
+        </div>
+    </div>
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-6 offset-sm-3 text-center mt-auto">
-                    <h1>Ristorante con Fusion</h1>
-                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
-                    <a class="text-white visit_link" href="./contactus.html" role="button">Visit us </a>
+                <div class="col-12 col-md-8 offset-md-2 text-center mt-auto">
+                    <h1 class="jumbo_head">Ristorante con Fusion</h1>
+                    <p class="jumbo_text">We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                    <a class="text-white visit_link" href="./menu.html" role="button">Visit us </a>
                 </div>
             </div>
         </div>
     </header>
-    <div class="container">
-        <div class="row row-header">
-            <ol class="col-12 breadcrumb">
-                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                <li class="breadcrumb-item active">About Us</li>
-            </ol>
-            <div>
-               <h3>About Us</h3>
-               <hr>
+    <div class="container about_container">
+        <div class="row row-content">
+            <div class="col-12 offset-md-1 col-md-10 text-center story">
+                <h2 class="story_head">Our Story</h2>
+                <p class="story_text">Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong.  Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
+                <p class="story_text">The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
             </div>
         </div>
         <div class="row row-content">
-            <div class="col-12 col-sm-6">
-                <h2>Our History</h2>
-                <p>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong.  Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
-                <p>The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
-            </div>
-            <div class="col-12 col-sm-6">
-                <div class="card">
-                    <h3 class="card-header bg-primary text-white">Facts At a Glance</h3>
-                    <div class="card-body">
-                        <dl class="row">
-                            <dt class="col-6">Started</dt>
-                            <dd class="col-6">3 Feb. 2013</dd>
-                            <dt class="col-6">Major Stake Holder</dt>
-                            <dd class="col-6">HK Fine Foods Inc.</dd>
-                            <dt class="col-6">Last Year's Turnover</dt>
-                            <dd class="col-6">$1,250,375</dd>
-                            <dt class="col-6">Employees</dt>
-                            <dd class="col-6">40</dd>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row row-content">
-            <div class="col-12">
-                <h2>Corporate Leadership</h2>
+            <div class="col-12 text-center people">
+                <h2 class="people_head">Our People</h2>
                 <div id="accordion">
                     <div class="card">
                         <div class="card-header" role="tab" id="peterhead">
@@ -227,66 +258,127 @@
                     </div>
                 </div>                      
             </div>
+        </div>
+        <div class="row row-content fact_glance">
+            <div class="col-12 offset-sm-7 col-sm-5">
+                <div class="card mt-5">
+                    <h3 class="card-header bg-primary text-white">Facts At a Glance</h3>
+                    <div class="card-body">
+                        <dl class="row">
+                            <dt class="col-6">Started</dt>
+                            <dd class="col-6">3 Feb. 2013</dd>
+                            <dt class="col-6">Major Stake Holder</dt>
+                            <dd class="col-6">HK Fine Foods Inc.</dd>
+                            <dt class="col-6">Last Year's Turnover</dt>
+                            <dd class="col-6">$1,250,375</dd>
+                            <dt class="col-6">Guests Served</dt>
+                            <dd class="col-6">100,000</dd>
+                            <dt class="col-6">Special Events</dt>
+                            <dd class="col-6">45</dd>
+                            <dt class="col-6">Employees</dt>
+                            <dd class="col-6">40</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-12 feedback text-center">
+                <h3 class="feedback_head">Send us your Feedback</h3>
+            </div>
+            <div class="col-12 col-md-9">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-md-2 col-form-label" for="firstname">First Name</label>
+                        <div class="col-md-10">
+                            <input class="form-control" id="firstname" type="text" name="firstname" placeholder="First Name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-2 col-form-label" for="lastname">Last Name</label>
+                        <div class="col-md-10">
+                            <input class="form-control" id="lastname" type="text" name="lastname" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-12 col-md-2 col-form-label" for="telnum">Contact Tel.</label>
+                        <div class="col-5 col-md-3">
+                            <input class="form-control" id="areacode" type="tel" name="areacode" placeholder="Areacode">
+                        </div>
+                        <div class="col-7 col-md-7">
+                            <input class="form-control" id="telnum" type="tel" name="telnum" placeholder="Tel. Number">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-2 col-form-label" for="emailid">Email</label>
+                        <div class="col-md-10">
+                            <input class="form-control" id="emailid" type="text" name="emailid" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-6 offset-md-2">
+                            <div class="form-check">
+                                <input class="form-check-input" id="approve" type="checkbox" name="approve" value="">
+                                <label class="form-check-label" for="approve"><strong>May we contact you?</strong></label>
+                            </div>
+                        </div>
+                        <div class="col-md-3 offset-md-1">
+                            <select class="form-control">
+                                <option>Tel.</option>
+                                <option>Email</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-2 col-form-label" for="feedback">Your Feedback</label>
+                        <div class="col-md-10">
+                            <textarea class="form-control" id="feedback" name="feedback" rows="12"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-10 offset-md-2">
+                            <button type="submit" class="btn btn-primary">Send Feedback</button>
+                        </div>
+                    </div>                                                              
+                </form>
+            </div>
        </div>
        <div class="row row-content">
-           <div class="col-12 col-sm-9">
-               <h2>Facts &amp; Figures</h2>
-                <div class="table-responsive">
-                    <table class="table table-striped">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th>&nbsp;</th>
-                                <th>2013</th>
-                                <th>2014</th>
-                                <th>2015</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>Employees</th>
-                                <td>15</td>
-                                <td>30</td>
-                                <td>40</td>
-                            </tr>
-                            <tr>
-                                <th>Guests Served</th>
-                                <td>15000</td>
-                                <td>45000</td>
-                                <td>100,000</td>
-                            </tr>
-                            <tr>
-                                <th>Special Events</th>
-                                <td>3</td>
-                                <td>20</td>
-                                <td>45</td>
-                            </tr>
-                            <tr>
-                                <th>Annual Turnover</th>
-                                <td>$251,325</td>
-                                <td>$1,250,375</td>
-                                <td>~$3,000,000</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>               
-           </div>
+            <div class="col-12 text-center">
+                <h3 class="map_head">Our Location</h3>
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.1785387796986!2d114.28274421442931!3d22.309086548214655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040381be582409%3A0x5ca78cbef899f174!2s121%20Clear%20Water%20Bay%20Rd%2C%20Clear%20Water%20Bay%2C%20Hong%20Kong!5e0!3m2!1sen!2sin!4v1612712734361!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
        </div>
     </div>
     <footer class="footer">
         <div class="container">
-            <div class="row ">             
-                <div class="col-4 col-sm-3">
-                    <h5>Links</h5>
+            <div class="row">             
+                <div class="col-4 col-md-2">
+                    <h5>Sitemap</h5>
                     <ul class="list-unstyled">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
                         <li><a href="./menu.html">Menu</a></li>
-                        <li><a href="./contactus.html">Contact</a></li>
+                        <li><a data-toggle="modal" data-target="#reserve">Reservation</a></li>
                     </ul>
                 </div>
-                <div class="col-8 col-sm-5">
+                <div class="col-8 col-md-3">
+                    <div class="opening_hours">
+                        <h5>OPENING HOURS</h5>
+                        <div class="hour_type"><p><strong>Lunch</strong><br>
+                            Saturday &amp; Sunday :<br>
+                            Reservations 12pm to 1.30pm</p>
+                            <p><strong>Dinner</strong><br>
+                            Monday to Sunday :<br>
+                            Reservations 6pm to 8.45pm</p>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-12 col-md-3">
                     <div class="address_main">
-                        <h5>Our Address</h5>
+                        <h5>Location</h5>
                         <address>
                           121, Clear Water Bay Road<br>
                           Clear Water Bay, Kowloon<br>
@@ -294,12 +386,12 @@
                        </address>
                     </div>    
                 </div>
-                <div class="col-12 col-sm-4">
+                <div class="col-12 col-md-4">
                     <div class="contact_main">
-                        <h5>Contact us</h5>
+                        <h5>Contact</h5>
                         <ul>
-                            <li><i class="fa fa-phone fa-lg"></i> : +852 1234 5678</li>
-                            <li><i class="fa fa-fax fa-lg"></i> : +852 8765 4321</li>
+                            <li><i class="fa fa-phone fa-lg"></i> : <a href="tel:+85212345678">+852 1234 5678</a></li>
+                            <li><i class="fa fa-fax fa-lg"></i> : <a href="tel:+85287654321">+852 8765 4321</li>
                             <li><i class="fa fa-envelope-o fa-lg"></i> : <a href="mailto:confusion@food.net">confusion@food.net</a></li>
                         </ul>
                     </div>
