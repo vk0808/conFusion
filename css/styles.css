@@ -2,36 +2,29 @@
 a:hover {
 	text-decoration: none;
 }
-
 /* Navbar */
 .navbar {
 	background-color: #f7f7f7;
 }
-
 #login_list {
 	max-width: 120px;
 	background-color: #00BDD0;
 	padding: 0 10px;
 	border-radius: 20px;
 }
-
 .navbar-brand {
 	padding-left: 10px;
 }
-
 .navbar-nav li {
 	text-transform: uppercase;
 	font-weight: 700;
     letter-spacing: 1px;
 }
-
-
 /* Body */
 body{
 	padding-top: 60px;
 	z-index: 0;
 }
-
 /* Jumbotron */
 .jumbotron{
 	padding: 70px 30px;
@@ -43,12 +36,10 @@ body{
 	border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
 }
-
 .jumbo_text {
 	letter-spacing: 1px;
 	font-size: 20px;
 }
-
 .visit_link {
 	text-decoration: none;
 	border-bottom: 2px solid orange;
@@ -56,129 +47,105 @@ body{
 	font-weight: 500;
 	padding: 0 20px;
 }
-
 .visit_link:hover {
 	text-decoration: none;
 	border-bottom: 2px dashed orange;
 }
-
 @media (max-width: 768px) {
 	.jumbotron {
 		background-size: cover;
 		height: 600px;
 	}
 }
-
 @media (max-width: 530px) {
 	.jumbotron {
 		height: 650px;
 	}
 }
-
 @media (max-width: 368px) {
 	.jumbotron {
 		height: 780px;
 	}
 }
-
 .blockquote p {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 32px;
 	font-weight: 600;
 }
-
 .blockquote-footer {
 	font-size: 18px;
 	letter-spacing: 1px;
 	color: floralwhite;
 }  
-
 /* Footer */
 .footer{
 	background-color: #d1c4e9;
 	margin: 0px auto;
 	padding: 20px 0px; 
 }
-
 .contact_main ul {
 	padding-left: 0;
 }
-
 .contact_main li {
 	list-style: none;
 }
-
 /* Copyright */
 .social-accounts {
     padding-left: 0;
     list-style: none;
     display: inline-block;
 }
-
 .social-accounts>li {
 	display: inline-block;
     width: 26px;
     margin: 5px;
 }
-
 .social-accounts>li .fa {
     color: #f8f8f8;
 }
-
 .social-accounts>li .fa:hover {
 	color: #fd7e14;
 }
-
 /*  */
 .row-header{
 	margin: 0px auto;
 	padding: 0px auto;
 }
-
 .row-content{
 	margin: 0px auto;
 	padding: 50px 0px;
 	border-bottom: 1px ridge;
 	min-height: 400px;
 }
-
 .address{
 	font-size: 80%;
 	margin: 0px;
 	color: #0f0f0f;
 }
-
 .tab-content{
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     padding: 10px;
 }
-
 .carousel{
 	background: #512da8;
 }
-
 .carousel-item{
 	height: 300px;
 }
-
 .carousel-item img{
 	position: absolute;
 	top: 0;
 	left: 0;
 	min-height: 300px;
 }
-
-
-/* Culnary Section */
-/* Left-image, right-content */
+/* Culnary Section */ /* Left-image, right-content */
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
-
 section {
 	width: 100%;
 	display: flex;
@@ -186,7 +153,6 @@ section {
 	justify-content: center;
 	background-color: #fcf8f4;
 }
-
 .culnary {
 	padding: 50px 0;
 	width: 100%;
@@ -200,16 +166,14 @@ section {
 .left-image-1 {
 	width: 60%;
 	height: 500px;
-	background: url('../img/pizza-pixabay.jpg') no-repeat center;
+	background: url('../img/pizza-pixabay.jpeg') no-repeat center;
 	background-size: cover;
 }
-
 .block1-left {
 	border: 20px solid #d1d1d1;
 	background-color: #f9f9f9;
 	padding: 20px;
 }
-
 .right-content {
 	width: 50%;
 	min-height: 400px;
@@ -218,14 +182,12 @@ section {
 	justify-content: center;
 	margin-left: -100px;
 }
-
 .cont_head {
 	font-size: 30px;
 	font-size: 30px;
     margin-bottom: 20px;
     line-height: 40px;
 }
-
 .cont_text {
 	padding: 20px 0;
 	font-size: 18px;
@@ -234,42 +196,36 @@ section {
     font-weight: 500;
     letter-spacing: 1px;
 }
-
 .read-btn {
 	text-transform: uppercase;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	background-color: #00BDD0;
 	border-radius: 25px;
 	padding: 5px 10px;
 	color: #f8f8f8;
 }
-
 @media only screen and (max-width: 768px) {
 	.culnary {
 		flex-direction: column;
 	}
-
 	.left-image-1 {
 		width: 100%;
 		height: 400px;
 	}
-
 	.right-content {
 		width: 90%;
 		margin: 0;
 		margin-top: -100px;
 	}
 }
-
 /* Right-image, left-content */
 .right-image {
 	width: 60%;
 	height: 500px;
-	background: url('../img/buffet-naim-benjelloun.jpg') no-repeat center;
+	background: url('../img/buffet-naim-benjelloun.jpeg') no-repeat center;
 	background-size: cover;
 	z-index: 0;
 }
-
 .left-content {
 	width: 50%;
 	min-height: 400px;
@@ -279,18 +235,15 @@ section {
 	margin-right: -100px;
 	z-index: 1;
 }
-
 @media only screen and (max-width: 768px) {
 	.culnary {
 		flex-direction: column;
 	}
-
 	.right-image {
 		width: 100%;
 		height: 400px;
 		order: 1;
 	}
-
 	.left-content {
 		width: 90%;
 		margin: 0;
@@ -298,17 +251,19 @@ section {
 		order: 2;
 	}
 }
-
 .left-image-2 {
 	width: 60%;
 	height: 500px;
-	background: url('../img/chef-tirachard-kumtanom.jpg') no-repeat center;
+	background: url('../img/chef-tirachard-kumtanom.jpeg') no-repeat center;
 	background-size: cover;
 }
-
 @media only screen and (max-width: 768px) {
 	.left-image-2 {
 		width: 100%;
 		height: 400px;
 	}
+}
+/* Reserve modal */
+.modal-reserve {
+	width: 350px;
 }

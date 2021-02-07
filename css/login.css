@@ -78,7 +78,6 @@
 	background: #45aba6 !important;
 	outline: none;
 }
-
 /*** Login Media Queries ***/
 @media (max-width: 425px){
 	.modal-login {		
@@ -86,8 +85,6 @@
 		left: 8%;
 	}
 }
-
-
 /*** Sign up Modal ***/
 .modal-signup {		
 	color: #636363;
@@ -168,7 +165,6 @@
 	background: #45aba6 !important;
 	outline: none;
 }
-
 /*** Sign up Media Queries ***/
 @media (max-width: 425px){
 	.modal-signup {		

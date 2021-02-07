@@ -1,31 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en-US">
 <head>
     <title>Ristorante Con Fusion</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-social@5.1.1/bootstrap-social.css">
-
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
     <!-- External CSS -->
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/login.css">
-
 </head>
-
 <body>
     <nav class="navbar navbar-light navbar-expand-md fixed-top">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar"><span class="navbar-toggler-icon"></span></button>
             <a class="navbar-brand mr-auto" href="#"><img src="./img/logo.png" alt="logo" height="30" width="41">Ristorante con Fusion</a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav ml-auto">
@@ -38,15 +30,12 @@
             </div>
         </div>
     </nav>
-
     <!-- Login Modal -->
     <div class="modal fade" id="Loginmodal" role="dialog">
         <div class="modal-dialog modal-login modal-lg" role="content">
             <div class="modal-content">
                 <div class="modal-header">
-                    <div class="avatar">
-                        <img src="../img/avatar.png" alt="Avatar">
-                    </div>
+                    <div class="avatar"><img src="../img/avatar.png" alt="Avatar"></div>
                     <h4 class="modal-title">Login</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 </div>
@@ -54,8 +43,8 @@
                     <form>
                         <div class="form-group">
                             <div class="form-group">
-                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
-                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                                <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
                             </div>
                             <div class="form-group">
                                 <label class="sr-only" for="exampleInputPassword3">Password</label>
@@ -81,15 +70,12 @@
             </div>
         </div>
     </div>
-
     <!-- Signup Modal -->
     <div class="modal fade" id="SignUpModal" role="dialog">
         <div class="modal-dialog modal-lg modal-signup" role="content">
             <div class="modal-content">
                 <div class="modal-header">
-                    <div class="avatar">
-                        <img src="../img/avatar.png" alt="Avatar">
-                    </div>
+                    <div class="avatar"><img src="../img/avatar.png" alt="Avatar"></div>
                     <h4 class="modal-title">Signup</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 </div>
@@ -133,45 +119,49 @@
             </div>
         </div>
     </div>
-
     <!-- Reservation Modal -->
     <div class="modal fade" id="reserve" role="dialog">
-        <div class="modal-dialog modal-lg" role="content">
+        <div class="modal-dialog modal-reserve modal-lg" role="content">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Reserve a Table</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>                    
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>                    
                 </div>
                 <div class="modal-body">
                     <form>
                         <div class="form-group row">
-                            <label class="col-sm-2 col-form-label">Number of Guests</label>
-                            <div class="col-sm-10">
-                                <input id="1" type="radio" name="guests" value="1"> <label for="1">1</label>
-                                <input id="2" type="radio" name="guests" value="2"> <label for="2">2</label>
-                                <input id="3" type="radio" name="guests" value="3"> <label for="3">3</label>
-                                <input id="4" type="radio" name="guests" value="4"> <label for="4">4</label>
-                                <input id="5" type="radio" name="guests" value="5"> <label for="5">5</label>
-                                <input id="6" type="radio" name="guests" value="6"> <label for="6">6</label>
+                            <label class="col-sm-3 col-form-label">Number of Guests</label>
+                            <div class="col-sm-4">
+                                <select class="custom-select" style="width:150px;">
+                                    <option>1</option> 
+                                    <option>2</option> 
+                                    <option>3</option> 
+                                    <option>4</option> 
+                                    <option>5</option> 
+                                    <option>6</option> 
+                                </select>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-md-2 col-form-label">Section</label>
-                            <div class="col-md-5 btn-group btn-group-toggle" data-toggle="buttons">
-                                <label class="btn btn-success active">
+                            <label class="col-md-3 col-form-label">Section</label>
+                            <div class="col-md-9 btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-success badge-pill active">
                                     <input type="radio" name="options" id="option1" autocomplete="off" checked> Non Smoking
                                 </label>
-                                <label class="btn btn-danger">
+                                <label class="btn btn-danger badge-pill">
                                     <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
                                 </label>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-md-2 col-form-label" for="date">Date and Time</label>
-                            <div class="col-md-5">
+                            <label class="col-sm-3 col-form-label" for="date">Date Time</label>
+                            <div class="col-sm-9">
                                 <input class="form-control" id="date" type="date" name="date" placeholder="Date">
                             </div>
-                            <div class="col-md-5">
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label" for="time">Time</label>
+                            <div class="col-sm-9">
                                 <input class="form-control" type="time" name="" id="time" placeholder="Time">
                             </div>
                         </div>
@@ -181,10 +171,11 @@
                         </div>
                     </form>
                 </div>
+                <div class="modal-footer">
+                </div>     
             </div>
         </div>
     </div>
-
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -193,14 +184,9 @@
                     <p class="jumbo_text">We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                     <a class="text-white visit_link" href="./contactus.html" role="button">Visit us </a>
                 </div>
-                <!-- <div class="col-12 col-sm-4 align-self-center">
-                    <a class="btn btn-warning btn-block btn btn-lg text-dark" role="button" data-toggle="modal" 
-                        data-target="#reserve">Reserve Table</a>
-                </div> -->
             </div>
         </div>
     </header>
-
     <div class="jumbotron-hr bg-info"> 
         <div class="container">
             <div class="row text-center pt-5 pb-5">
@@ -219,7 +205,6 @@
             </div>
         </div>
     </div>
-
     <section>
         <div class="container culnary">
             <div class="left-image-1"></div>
@@ -228,12 +213,11 @@
                     <h2 class="mt-0 cont_head">Our Culinary Creations</h2>
                     <h3 class="cont_sub-head">Uthappizza</h3>
                     <p class="cont_text">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
-                    <a href="./menu.html" class="read-btn">Read more</a>
+                    <a href="./menu.html" class="read-btn">View menus</a>
                 </div>
             </div>
         </div>
     </section>
-
     <section>
         <div class="container culnary">
             <div class="left-content">
@@ -248,7 +232,6 @@
             <div class="right-image"></div>
         </div>
     </section>
-
     <section>
         <div class="container culnary">
             <div class="left-image-2"></div>
@@ -263,7 +246,6 @@
             </div>
         </div>
     </section>
-
     <footer class="footer">
         <div class="container">
             <div class="row">             
@@ -299,8 +281,6 @@
            </div>
         </div>
     </footer>
-
-
     <!-- Copyright -->
     <div class="copyright bg-dark mb-0 text-white">
         <div class="container">
@@ -320,16 +300,11 @@
             </div>
         </div>
     </div>
-
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
     <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
     <!-- Bootstrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 </body>
-
 </html>
