@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Ristorante Con Fusion: Menu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-social@5.1.1/bootstrap-social.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- External CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <nav class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar"><span class="navbar-toggler-icon"></span></button>
+            <a class="navbar-brand mr-auto" href="./index.html"><img src="./img/logo.png" alt="logo" height="30" width="41">Ristorante con Fusion</a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-items"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-items"><a class="nav-link" href="./aboutus.html">About</a></li>
+                    <li class="nav-items active"><a class="nav-link" href="#">Menu</a></li>
+                    <li class="nav-items"><a class="nav-link" data-toggle="modal" data-target="#reserve">Reservation</a></li>
+                    <li class="nav-items" id="login_list"><a class="nav-link" data-toggle="modal" data-target="#Loginmodal">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Login Modal -->
+    <div class="modal fade" id="Loginmodal" role="dialog">
+        <div class="modal-dialog modal-login modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="avatar"><img src="../img/avatar.png" alt="Avatar"></div>
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <div class="form-group">
+                                <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="remember">
+                                    <label class="form-check-label" for="remember"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Login</button>        
+                        </div>
+                    </form>                 
+                </div>
+                <div class="modal-footer">
+                    <a href="#">Forgot Password?</a>
+                    <a data-toggle="modal" data-target="#SignUpModal" data-dismiss="modal">Not a Member?</a>
+                </div>           
+            </div>
+        </div>
+    </div>
+    <!-- Signup Modal -->
+    <div class="modal fade" id="SignUpModal" role="dialog">
+        <div class="modal-dialog modal-lg modal-signup" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="avatar"><img src="../img/avatar.png" alt="Avatar"></div>
+                    <h4 class="modal-title">Signup</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label class="sr-only" for="signup_name1">Full Name </label>
+                            <input type="text" class="form-control form-control-sm" id="signup_name1" placeholder="Full Name">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="signup_username1">Username </label>
+                            <input type="text" class="form-control form-control-sm" id="signup_username1" placeholder="Username">
+                        </div>                          
+                        <div class="form-group">
+                            <label class="sr-only" for="signup_email1">Email </label>
+                            <input type="email" class="form-control form-control-sm" id="signup_email1" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="signup_password1">Password</label>
+                            <input type="password" class="form-control form-control-sm" id="signup_password1" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="signup_password2">Confirm Password</label>
+                            <input type="password" class="form-control form-control-sm" id="signup_password2" placeholder="Confirm Password">
+                        </div>                            
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="accepttn">
+                                <label class="form-check-label" for="accepttn"> Accept terms and conditions
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block signup-btn">Signup</button>        
+                        </div>
+                    </form>                    
+                </div>
+                <div class="modal-footer">
+                    <a data-toggle="modal" data-target="#Loginmodal" data-dismiss="modal">Already a member?</a>
+                </div>               
+            </div>
+        </div>
+    </div>
+    <!-- Reservation Modal -->
+    <div class="modal fade" id="reserve" role="dialog">
+        <div class="modal-dialog modal-reserve modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Reserve Table</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>                    
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Number of Guests</label>
+                            <div class="col-sm-4">
+                                <select class="custom-select" style="width:150px;">
+                                    <option>1</option> 
+                                    <option>2</option> 
+                                    <option>3</option> 
+                                    <option>4</option> 
+                                    <option>5</option> 
+                                    <option>6</option> 
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label">Section</label>
+                            <div class="col-md-9 btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-success badge-pill active">
+                                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Non Smoking
+                                </label>
+                                <label class="btn btn-danger badge-pill">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label" for="date">Date Time</label>
+                            <div class="col-sm-9">
+                                <input class="form-control" id="date" type="date" name="date" placeholder="Date">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label" for="time">Time</label>
+                            <div class="col-sm-9">
+                                <input class="form-control" type="time" name="" id="time" placeholder="Time">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="offset-2 btn btn-secondary btn-sm" data-dismiss="modal">Cancel</button>
+                            <button class="btn btn-primary btn-sm ml-1" type="submit">Reserve</button>     
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                </div>     
+            </div>
+        </div>
+    </div>
+    <!-- Menu -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-4 col-md-2">
+                    <h5>Sitemap</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
+                        <li><a href="./menu.html">Menu</a></li>
+                        <li><a data-toggle="modal" data-target="#reserve">Reservation</a></li>
+                    </ul>
+                </div>
+                <div class="col-8 col-md-3">
+                    <div class="opening_hours">
+                        <h5>OPENING HOURS</h5>
+                        <div class="hour_type"><p><strong>Lunch</strong><br>
+                            Saturday &amp; Sunday :<br>
+                            Reservations 12pm to 1.30pm</p>
+                            <p><strong>Dinner</strong><br>
+                            Monday to Sunday :<br>
+                            Reservations 6pm to 8.45pm</p>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="address_main">
+                        <h5>Location</h5>
+                        <address>
+                          121, Clear Water Bay Road<br>
+                          Clear Water Bay, Kowloon<br>
+                          HONG KONG<br>
+                       </address>
+                    </div>    
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="contact_main">
+                        <h5>Contact</h5>
+                        <ul>
+                            <li><i class="fa fa-phone fa-lg"></i> : <a href="tel:+85212345678">+852 1234 5678</a></li>
+                            <li><i class="fa fa-fax fa-lg"></i> : <a href="tel:+85287654321">+852 8765 4321</li>
+                            <li><i class="fa fa-envelope-o fa-lg"></i> : <a href="mailto:confusion@food.net">confusion@food.net</a></li>
+                        </ul>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </footer>
+    <!-- Copyright -->
+    <div class="copyright bg-dark mb-0 text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <ul class="social-accounts mb-0">
+                        <li><a href="http://www.facebook.com/profile.php?id="><span class="fa fa-facebook fa-lg"></span></a></li>
+                        <li><a href="http://instagram.com/"><span class="fa fa-instagram fa-lg"></span></a></li>
+                        <li><a href="http://twitter.com/"><span class="fa fa-twitter fa-lg"></span></a></li>
+                        <li><a href="http://youtube.com/"><span class="fa fa-youtube fa-lg"></span></a></li>
+                        <li><a href="mailto:"><span class="fa fa-envelope-o fa-lg"></span></a></li>
+                    </ul>
+                </div>
+                <div class="col-7 text-right">
+                    <small>Copyright &copy; 2021 Ristorante Con Fusion</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

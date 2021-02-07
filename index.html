@@ -24,7 +24,7 @@
                     <li class="nav-items active"><a class="nav-link" href="#">Home</a></li>
                     <li class="nav-items"><a class="nav-link" href="./aboutus.html">About</a></li>
                     <li class="nav-items"><a class="nav-link" href="#">Menu</a></li>
-                    <li class="nav-items"><a class="nav-link" href="./contactus.html">Contact</a></li>
+                    <li class="nav-items"><a class="nav-link" data-toggle="modal" data-target="#reserve">Reservation</a></li>
                     <li class="nav-items" id="login_list"><a class="nav-link" data-toggle="modal" data-target="#Loginmodal">Login</a></li>
                 </ul>
             </div>
@@ -124,7 +124,7 @@
         <div class="modal-dialog modal-reserve modal-lg" role="content">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Reserve a Table</h4>
+                    <h4 class="modal-title">Reserve Table</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>                    
                 </div>
                 <div class="modal-body">
@@ -182,7 +182,7 @@
                 <div class="col-12 col-md-8 offset-md-2 text-center mt-auto">
                     <h1 class="jumbo_head">Ristorante con Fusion</h1>
                     <p class="jumbo_text">We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
-                    <a class="text-white visit_link" href="./contactus.html" role="button">Visit us </a>
+                    <a class="text-white visit_link" href="./menu.html" role="button">Visit us </a>
                 </div>
             </div>
         </div>
@@ -249,18 +249,30 @@
     <footer class="footer">
         <div class="container">
             <div class="row">             
-                <div class="col-4 col-sm-3">
-                    <h5>Links</h5>
+                <div class="col-4 col-md-2">
+                    <h5>Sitemap</h5>
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
                         <li><a href="./aboutus.html">About</a></li>
                         <li><a href="./menu.html">Menu</a></li>
-                        <li><a href="./contactus.html">Contact</a></li>
+                        <li><a data-toggle="modal" data-target="#reserve">Reservation</a></li>
                     </ul>
                 </div>
-                <div class="col-8 col-sm-5">
+                <div class="col-8 col-md-3">
+                    <div class="opening_hours">
+                        <h5>OPENING HOURS</h5>
+                        <div class="hour_type"><p><strong>Lunch</strong><br>
+                            Saturday &amp; Sunday :<br>
+                            Reservations 12pm to 1.30pm</p>
+                            <p><strong>Dinner</strong><br>
+                            Monday to Sunday :<br>
+                            Reservations 6pm to 8.45pm</p>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-12 col-md-3">
                     <div class="address_main">
-                        <h5>Our Address</h5>
+                        <h5>Location</h5>
                         <address>
     		              121, Clear Water Bay Road<br>
     		              Clear Water Bay, Kowloon<br>
@@ -268,12 +280,12 @@
     		           </address>
                     </div>    
                 </div>
-                <div class="col-12 col-sm-4">
+                <div class="col-12 col-md-4">
                     <div class="contact_main">
-                        <h5>Contact us</h5>
+                        <h5>Contact</h5>
                         <ul>
-                            <li><i class="fa fa-phone fa-lg"></i> : +852 1234 5678</li>
-    		                <li><i class="fa fa-fax fa-lg"></i> : +852 8765 4321</li>
+                            <li><i class="fa fa-phone fa-lg"></i> : <a href="tel:+85212345678">+852 1234 5678</a></li>
+    		                <li><i class="fa fa-fax fa-lg"></i> : <a href="tel:+85287654321">+852 8765 4321</li>
     		                <li><i class="fa fa-envelope-o fa-lg"></i> : <a href="mailto:confusion@food.net">confusion@food.net</a></li>
                         </ul>
                     </div>
@@ -294,7 +306,7 @@
                         <li><a href="mailto:"><span class="fa fa-envelope-o fa-lg"></span></a></li>
                     </ul>
                 </div>
-                <div class="col-7 text-right">
+                <div class="col-sm-7 text-center text-sm-right">
                     <small>Copyright &copy; 2021 Ristorante Con Fusion</small>
                 </div>
             </div>
