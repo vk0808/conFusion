@@ -20,10 +20,14 @@ a:hover {
 	font-weight: 700;
     letter-spacing: 1px;
 }
+.nav-items.active .nav-link {
+	color: #fd7e14 !important;
+}
 /* Body */
 body{
 	padding-top: 60px;
 	z-index: 0;
+	background-color: #fcf8f4;
 }
 /* Jumbotron */
 .jumbotron{
@@ -40,14 +44,15 @@ body{
 	letter-spacing: 1px;
 	font-size: 20px;
 }
-.visit_link {
+.visit_link, .read-btn {
 	text-decoration: none;
 	border-bottom: 2px solid orange;
 	text-transform: uppercase;
 	font-weight: 500;
 	padding: 0 20px;
+	letter-spacing: 1px;
 }
-.visit_link:hover {
+.visit_link:hover, .read-btn:hover {
 	text-decoration: none;
 	border-bottom: 2px dashed orange;
 }
@@ -97,6 +102,9 @@ body{
 }
 .contact_main li {
 	list-style: none;
+}
+.hour_type strong {
+	border-bottom: 2px solid floralwhite;
 }
 /* Copyright */
 .social-accounts {
@@ -190,18 +198,14 @@ section {
 .cont_text {
 	padding: 20px 0;
 	font-size: 18px;
+	color: #343a40;
     line-height: 25px;
     margin: 20px 0;
     font-weight: 500;
     letter-spacing: 1px;
 }
 .read-btn {
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	background-color: #00BDD0;
-	border-radius: 25px;
-	padding: 5px 10px;
-	color: #f8f8f8;
+	color: #343a40;
 }
 @media only screen and (max-width: 768px) {
 	.culnary {
@@ -264,10 +268,10 @@ section {
 }
 /* Reserve modal */
 .modal-reserve {
-	width: 350px;
+	width: 450px;
 }
-.hour_type strong {
-	border-bottom: 2px solid floralwhite;
+.modal-reserve label {
+	font-weight: 600;
 }
 @media only screen and (max-width: 575px) {
 	.modal-reserve {
