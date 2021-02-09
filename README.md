@@ -6,7 +6,7 @@ To view demo [Clicke here](https://vk0808.github.io/conFusion/index.html)
 
 ## About
 **Version 1.0.0** : 
-A restaurant website design, utilizing Bootstrap 4.
+A restaurant website design, utilizing HTML5, CSS3 and Bootstrap 4.
 
 ---
 
