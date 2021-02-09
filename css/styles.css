@@ -4,7 +4,11 @@ a:hover {
 }
 /* Navbar */
 .navbar {
-	background-color: #f7f7f7;
+	background-color: #fff;
+}
+.navbar .container {
+	padding-right: 0;
+    padding-left: 0;
 }
 #login_list {
 	max-width: 120px;
@@ -54,7 +58,7 @@ body{
 }
 .visit_link:hover, .read-btn:hover {
 	text-decoration: none;
-	border-bottom: 2px dashed orange;
+	border-bottom: none;
 }
 @media (max-width: 768px) {
 	.jumbotron {
@@ -129,31 +133,13 @@ body{
 	margin: 0px;
 	color: #0f0f0f;
 }
-.tab-content{
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    padding: 10px;
-}
-.carousel{
-	background: #512da8;
-}
-.carousel-item{
-	height: 300px;
-}
-.carousel-item img{
-	position: absolute;
-	top: 0;
-	left: 0;
-	min-height: 300px;
-}
 /* Culnary Section */ /* Left-image, right-content */
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
-section {
+.feature_section {
 	width: 100%;
 	display: flex;
 	align-items: center;
