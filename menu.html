@@ -5,14 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="icon" href="./img/logo.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-social@5.1.1/bootstrap-social.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- External CSS -->
-    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/menu.css">
+
 </head>
 <body>
     <nav class="navbar navbar-light navbar-expand-sm fixed-top">
@@ -177,6 +180,530 @@
         </div>
     </div>
     <!-- Menu -->
+    <div class="container mt-5" id="menus">
+        <div class="row row-content">
+            <div class="col-xs-12 text-center">
+                <h2 class="menu_list">Our Menu</h2>
+                <div class="tabs">
+                    <nav>
+                    <ul class="nav nav-tabs nav-justified" role="tablist">                    
+                        <li class="nav-item" role="presentation"><a id="tab-brunch" class="nav-link active" href="#brunch" role="tab" aria-controls="brunch" aria-selected="true" data-toggle="tab" data-order="1" tabindex="-1">Brunch</a></li>
+                        <li class="nav-item" role="presentation"><a id="tab-dinner" class="nav-link" href="#dinner" role="tab" aria-controls="dinner" aria-selected="false" data-toggle="tab" data-order="2" tabindex="-1">Dinner</a></li>
+                        <li class="nav-item" role="presentation"><a id="tab-dessert" class="nav-link" href="#dessert" role="tab" aria-controls="dessert" aria-selected="false" data-toggle="tab" data-order="3" tabindex="-1">Dessert</a></li>
+                        <li class="nav-item" role="presentation"><a id="tab-appetizers" class="nav-link" href="#appetizers" role="tab" aria-controls="appetizers" aria-selected="false" data-toggle="tab" data-order="4" tabindex="-1">Appetizers</a></li>
+                        <li class="nav-item" role="presentation"><a id="tab-drink" class="nav-link" href="#drink" role="tab" aria-controls="drink" aria-selected="false" data-toggle="tab" data-order="5" tabindex="-1">Drinks</a></li>
+                    </ul>
+                    </nav>
+                    <div class="tab-content">
+                        <section id="brunch" class="tab-pane fade show active" role="tabpanel" aria-labelledby="tab-brunch" aria-selected="true">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <section class="menu-section">
+                                            <div class="menu-section__header">
+                                                <h3>Bread</h3>
+                                            </div>
+                                            <ul>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Naan</p>
+                                                    <p>fresh bread baked in clay oven</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>2.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Cheese Naan</p>
+                                                    <p>fresh bread stuffed with cottage cheese</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>3.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Garlic Naan</p>
+                                                    <p>fresh bread topped with garlic and cilantro baked in clay oven</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>3.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Chili Garlic Naan</p>
+                                                    <p>fresh bread baked in tandoor topped with chili, garlic and cilantro</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>4.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Plain Paratha</p>
+                                                    <p>flatbread that is layered and pan fried</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>2.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Aloo Paratha</p>
+                                                    <p>flatbread with spicy potato filling</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>3.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Methi Paratha</p>
+                                                    <p>flatbread with methi</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>3.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Paneer Paratha</p>
+                                                    <p>flatbread with paneer filling</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>3.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Poori</p>
+                                                    <p>flat circles of dough, deep fired in oil or ghee</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>2.99</strong>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                            <div class="menu-section__header">
+                                                <h3>Vegetarian Curry</h3>
+                                            </div>
+                                            <ul>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Chana Masala</p>
+                                                    <p>chickpeas cooked with garam masala, onions, tomatoes, coriander, ginger and garlic</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>12.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Dhal Makhni</p>
+                                                    <p>2-3 varieties of lentils/beans cooked with spices and cream or butter added for richness</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>12.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Palak</p>
+                                                    <p>spinach pure cooked with onion, ginger, garlic, and Indian spices</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>11.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Palak Paneer</p>
+                                                    <p>spinach puree cooked with cubed cottage cheese, onion, ginger, garlic, and Indian spices</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>12.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Vindaloo</p>
+                                                    <p>mixture of chili, vinegar, and Indian spices blended together to make a spicy curry</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>12.99</strong>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <section class="menu-section">
+                                            <div class="menu-section__header">
+                                                <h3>Non Vegetarian Curry</h3>
+                                            </div>
+                                            <ul>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Butter Chicken</p>
+                                                    <p>boneless tandoori chicken cooked in a tomato-based creamy sauce and Indian spices</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>14.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Chicken Korma</p>
+                                                    <p>simple chicken gravy, cooked with cashew and spices</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>14.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Chicken Vindaloo</p>
+                                                    <p>mixture of chili, vinegar, and Indian spices blended together with chiken to make a spicy curry</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>14.99</strong>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                            <div class="menu-section__header">
+                                                <h3>Dosa</h3>
+                                            </div>
+                                            <ul>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Plain Dosa</p>
+                                                    <p>Indian lentil crepe made out of fermented rice batter and black gram batter</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>5.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Mysore Masala Dosa</p>
+                                                    <p>Indian lentil crisp and soft crepe spiced with red chutney</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>6.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Cheese Dosa</p>
+                                                    <p>Indian lentil crepe topped with cheese</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>6.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Uthapizza</p>
+                                                    <p>unique combinantion of indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur Chillies and Buffalo paneer</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>5.99</strong>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                            <div class="menu-section__header">
+                                                <h3>Main Plate</h3>
+                                            </div>
+                                            <ul>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Idli Vada</p>
+                                                    <p>steamed lentil cakes made from fermented rice and lentil batter, served with vada</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>6.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">North Indian Thali</p>
+                                                    <p>various dishes of a typical North Indian style meal are served together</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>14.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">South Indian Thali</p>
+                                                    <p>various dishes of a typical North Indian style meal are served together</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>14.99</strong>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="dinner" class="tab-pane fade" role="tabpanel" aria-labelledby="tab-dinner" aria-selected="false">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <section class="menu-section">
+                                            <div class="menu-section__header">
+                                                <h3>Basmati Rice Specialities</h3>
+                                            </div>
+                                            <ul>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Basmati Rice Plain</p>
+                                                    <p>cooked plain basmati rice</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>3.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Veg Biryani</p>
+                                                    <p>basmati rice cooked with vegetables and Indian spices</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>14.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Chicken Biryani</p>
+                                                    <p>basmati rice cooked with tendered chicken and Indian spices</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>18.99</strong>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                            <div class="menu-section__header">
+                                                <h3>Vegetarian Curry</h3>
+                                            </div>
+                                            <ul>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Chana Masala</p>
+                                                    <p>chickpeas cooked with garam masala, onions, tomatoes, coriander, ginger and garlic</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>8.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Dhal Makhni</p>
+                                                    <p>2-3 varieties of lentils/beans cooked with spices and cream or butter added for richness</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>8.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Daal Tadka</p>
+                                                    <p>pureed lentil flavored with cumin, tomatoes and seasoned with mustard seeds</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>8.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Paneer Makhani</p>
+                                                    <p>paneer cooked in rich herb butter flavored tomato gravy</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>7.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Vindaloo</p>
+                                                    <p>mixture of chili, vinegar, and Indian spices blended together to make a spicy curry</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>8.99</strong>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </section>    
+                                    </div>
+                                    <div class="col-md-6">
+                                        <section class="menu-section">
+                                            <div class="menu-section__header">
+                                                <h3>Non Vegetarian Curry</h3>
+                                            </div>
+                                            <ul>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Butter Chicken</p>
+                                                    <p>boneless tandoori chicken cooked in a tomato-based creamy sauce and Indian spices</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>12.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Chicken Korma</p>
+                                                    <p>simple chicken gravy, cooked with cashew and spices</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>12.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Chicken Vindaloo</p>
+                                                    <p>mixture of chili, vinegar, and Indian spices blended together with chiken to make a spicy curry</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>13.99</strong>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                            <div class="menu-section__header">
+                                                <h3>Tandoori</h3>
+                                            </div>
+                                            <ul>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Chicken Tikka</p>
+                                                    <p>boneless chicken breast marinated in tandoori masala and slowly cooked in tandoor</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>13.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Sheiesh Kabab</p>
+                                                    <p>pieces of marinated chicken and vegetables cooked and served on skewers</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>15.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Tandoori Chicken</p>
+                                                    <p>bone-in chicken, cooked in clay oven with Indian spices</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>14.99</strong>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </section>    
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="dessert" class="tab-pane fade" role="tabpanel" aria-labelledby="tab-dessert" aria-selected="false">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <section class="menu-section">
+                                            <ul>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">ElaiCheese Cake</p>
+                                                    <p>a dectable, semi-sweet New York style Cheese cake , with  graham cracker crust and spiced with  Indian cardamoms</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>2.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Gulab Jamun</p>
+                                                    <p>deep fried pastry dough soaked in honey and sugar syrup</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>3.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">halwa</p>
+                                                    <p>tasty pudding prepared by mixing grated carrot with milk and sugar,  garnished with dried fruits</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>3.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Kheer</p>
+                                                    <p>a sweet pudding made with rice and milk, topped with dried fruits</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>3.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Kulfi</p>
+                                                    <p>Indian frozen dessert made with milk, sugar, nuts & cardamoms</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>3.99</strong>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </section>    
+                                    </div>
+                                    <div class="col-md-6">
+                                        <section class="menu-section">
+                                            <ul>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Peda</p>
+                                                    <p>semi-soft sweet made using khoa (dairy product) and sugar, flavored with saffron, pistachio nuts, and cardamom seeds</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>3.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Rasgulla</p>
+                                                    <p>syrupy ball-shaped, spongy dumpling made using cheese</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>3.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Ras malai</p>
+                                                    <p>cheese balls cooked in thickened milk and sugar syrup, garnished with dried fruits</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>3.99</strong>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="appetizers" class="tab-pane fade" role="tabpanel" aria-labelledby="tab-appetizers" aria-selected="false">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <section class="menu-section">
+                                            <ul>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Bhajji/Pakoras</p>
+                                                    <p>crispy deep fried dollops of spicy chickpea batter served with spicy condiments(chutney)</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>2.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Samosa</p>
+                                                    <p>contain a small amount of spicy potato or meat filling  that are then wrapped in dough and deep fried until crispy and flaky</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>2.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Vada Pav</p>
+                                                    <p>deep fried dumplings or flattened patties of potato, and a pav is a plain old dinner roll</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>2.99</strong>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </section>    
+                                    </div>
+                                    <div class="col-md-6">
+                                        <section class="menu-section">
+                                            <ul>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Vadonut</p>
+                                                    <p>a quintessential ConFusion experience, is it a vada or is it a donut?</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>2.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Zucchipakoda</p>
+                                                    <p>deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>2.99</strong>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="drink" class="tab-pane fade" role="tabpanel" aria-labelledby="tab-drink" aria-selected="false">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <section class="menu-section">
+                                            <div class="menu-section__header">
+                                                <h3>Milk based drinks</h3>
+                                            </div>
+                                            <ul>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Milk Shake</p>
+                                                    <p>refreshing drink made of cold milk, flavoring, and ice cream</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>3.49</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Sweet/Salty Lassi</p>
+                                                    <p>refreshing sweet Indian drink made with homemade yogurt</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>3.49</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Mango Lassi</p>
+                                                    <p>refreshing sweet Indian drink made with kesar mango and homemade yogurt</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>4.49</strong>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                            <div class="menu-section__header">
+                                                <h3>Soft Drinks</h3>
+                                            </div>
+                                            <ul>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Coca Cola</p>
+                                                    <p>a carbonated soft drink</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>8.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Sprite</p>
+                                                    <p>a colorless, lemon and lime-flavored soft drink</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>8.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Jeera Masala Soda</p>
+                                                    <p>jeera flavored carbonated soft drink</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>8.99</strong>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </section>    
+                                    </div>
+                                    <div class="col-md-6">
+                                        <section class="menu-section">
+                                            <div class="menu-section__header">
+                                                <h3>Coffee and Tea</h3>
+                                            </div>
+                                            <ul>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Instant Coffee</p>
+                                                    <p>coffee made from dried coffee extract</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>2.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Indian filter Coffee</p>
+                                                    <p>a sweet milky coffee made from dark roasted coffee beans and chicory</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>2.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Indian Plain Tea/Chai</p>
+                                                    <p>made by cooking a certain ration of water to milk, then add sugar as a sweetener and black tea together</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>2.99</strong>
+                                                    </p>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <p class="menu-item__heading">Indian Masala Tea/Masala Chai</p>
+                                                    <p>masala chai has a blend of cardamom, cinnamon, pepper and ginger cooked in chai</p>
+                                                    <p class="menu-item__details menu-item__details--price"> <strong><span class="menu-item__currency">$</span>2.99</strong>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </section> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer class="footer">
         <div class="container">
             <div class="row">             
