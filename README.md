@@ -1,6 +1,6 @@
 # Ristorante Con Fusion
 ![](https://img.shields.io/badge/Status-Complete-green.svg) <br>
-To view demo [Clicke here](https://vk0808.github.io/conFusion/index.html)
+To view demo [Click here](https://vk0808.github.io/conFusion/index.html)
 
 ---
 
