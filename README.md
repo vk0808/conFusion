@@ -5,7 +5,7 @@ To view demo [Click here](https://vk0808.github.io/conFusion/index.html)
 ---
 
 ## About
-A restaurant website design, utilizing HTML5, CSS3, and Bootstrap 4.
+A simple restaurant website that showcases the restaurant's best culinary creations, culinary specialists, and promotions. It includes features such as signup/login and reservation. It has about page with restaurant information from chef to address with map directions, and a feedback form. It also encloses a menu, which provides a list of various food that the restaurant serves, along with description and price.
 
 ---
 
